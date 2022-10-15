@@ -11,13 +11,19 @@ namespace OOP1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            c.setNumero(int.Parse(textBox1.Text));
+            c.numero = int.Parse(textBox1.Text);
+            //c.setNumero(int.Parse(textBox1.Text));
             textBox1.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox1.Text = c.getNumero().ToString();
+            textBox1.Text = c.numero.ToString();//c.getNumero().ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

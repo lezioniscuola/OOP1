@@ -10,13 +10,20 @@ namespace OOP1
     {
         //attributi
         private int Numero;
+        //property
+        public int numero
+        {
+            get { return Numero; }
+            set { Numero = value; }
+
+        }
         //costruttori
         public Classe()
         {
             Numero = 0;
         }
-        //metodi
-        public int getNumero()
+        //metodi accessor
+        /*public int getNumero()
         {
             return Numero;
         }
@@ -24,5 +31,6 @@ namespace OOP1
         {
             Numero = n;    
         }
+        */
     }
 }
